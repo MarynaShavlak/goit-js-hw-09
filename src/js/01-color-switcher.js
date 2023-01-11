@@ -1,5 +1,5 @@
-startBtn = document.querySelector('button[data-start]');
 stopBtn = document.querySelector('button[data-stop]');
+startBtn = document.querySelector('button[data-start]');
 bodyEl = document.querySelector('body');
 let intervalId = null;
 
