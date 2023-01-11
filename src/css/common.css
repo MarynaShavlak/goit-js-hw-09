@@ -16,3 +16,38 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  margin: 0 auto;
+  column-gap: 15px;
+  
+  color: #ffffff;
+  padding: 20px;
+  width: 700px;
+  color: #ffffff;
+
+}
+
+.timer div {
+  flex-basis: calc((100% - 3 * 15px)/4);
+  min-width: 90px;
+  padding: 15px;
+  background: #020b43;
+  border-radius: 10px;
+  border: 2px solid #030d52;
+
+}
+
+.timer div span {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  
+  font-size: 16px;
+  font-weight: 400;
+}
+.timer div .value {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
