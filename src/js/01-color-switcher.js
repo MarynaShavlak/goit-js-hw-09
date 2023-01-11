@@ -1,6 +1,6 @@
-stopBtn = document.querySelector('[data-stop]');
-startBtn = document.querySelector('[data-start]');
-bodyEl = document.querySelector('body');
+const stopBtn = document.querySelector('[data-stop]');
+const startBtn = document.querySelector('[data-start]');
+const bodyEl = document.querySelector('body');
 let intervalId = null;
 
 startBtn.addEventListener('click', onColorSwitcherStart);
