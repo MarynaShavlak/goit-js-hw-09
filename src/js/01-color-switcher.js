@@ -1,14 +1,14 @@
-startButton = document.querySelector('[data-start]');
-stopBtn = document.querySelector('[data-stop]');
+startBtn = document.querySelector('button[data-start]');
+stopBtn = document.querySelector('button[data-stop]');
 bodyEl = document.querySelector('body');
 let intervalId = null;
 
-startButton.addEventListener('click', onColorSwitcherStart);
+startBtn.addEventListener('click', onColorSwitcherStart);
 stopBtn.addEventListener('click', onColorSwitcherStop);
 
 function onColorSwitcherStart() {
   bodyEl.style.backgroundColor = getRandomHexColor();
-  startButton.disabled = true;
+  startBtn.disabled = true;
   stopBtn.disabled = false;
 
   intervalId = setInterval(() => {
@@ -17,7 +17,7 @@ function onColorSwitcherStart() {
 }
 function onColorSwitcherStop() {
   clearInterval(intervalId);
-  startButton.disabled = false;
+  startBtn.disabled = false;
   stopBtn.disabled = true;
 }
 
