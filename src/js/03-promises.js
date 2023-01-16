@@ -29,6 +29,7 @@ function onFormSubmit(e) {
 
     delay += step;
   }
+  formEl.reset();
 }
 
 function getValuesFromForm(e) {
